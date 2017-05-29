@@ -28,7 +28,9 @@
 				
 			});
 			
-			
+			function success(){
+				document.getElementById("success").innerHTML = "Payment Successfull";
+			};
 			
 			
 		</script>
@@ -39,7 +41,7 @@
 		<p id="test"></p>
 		<br>
 		<br>
-		<button id="payConfirm">Confirm Payment</button>
+		<button id="payConfirm" onclick="success()">Confirm Payment</button>
 		<p id="success"></p>
 
 		
