@@ -8,6 +8,10 @@
 	
 	<body>
 		<script>
+			function btnPay(){
+				document.getElementById("result").innerHTML = "<center><div class='container' style='padding:10px'><h3 style='color:green'><span class='glyphicon glyphicon-ok' aria-hidden='true' style='color:green'></span> Payment Successful</h3></div></center>";
+			}
+		
 			$().ready(function(){
 				
 			});
@@ -31,7 +35,7 @@
 							</div>
 							<div class="panel-body">
 								<div class="row">
-									<div class="col-xs-4"><img class="img-responsive" src="https://mohitsvnit.github.io/webpage-test/images/1.jpg">
+									<div class="col-xs-4"><img class="img-responsive" src="http://placehold.it/100x70">
 									</div>
 									<div class="col-xs-4">
 										<h5 class="product-name"><strong>Reebok Shoes</strong></h5><h5><small>For fast and durable.</small></h5>
@@ -52,7 +56,7 @@
 								</div>
 								<hr>
 								<div class="row">
-									<div class="col-xs-4"><img class="img-responsive" src="https://mohitsvnit.github.io/webpage-test/images/2.png">
+									<div class="col-xs-4"><img class="img-responsive" src="http://placehold.it/100x70">
 									</div>
 									<div class="col-xs-4">
 										<h5 class="product-name"><strong>Rayban Sunglasses</strong></h5><h5><small>Polarised</small></h5>
@@ -80,7 +84,7 @@
 										<h5 class="text-center">Total <strong>$50.00</strong></h5>
 									</div>
 									<div class="col-xs-6">
-										<button type="submit" id="btnConfirmPayment" data-toggle="modal" data-target=".paymentConfirm" class="btn btn-success btn-block" >Confirm Payment</button>
+										<button type="submit" id="btnConfirmPayment" onclick="btnPay()" class="btn btn-success btn-block" >Confirm Payment</button>
 									</div>
 								</div>
 							</div>
@@ -91,16 +95,13 @@
 		
 		<br>
 		
-		<div class="modal fade paymentConfirm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-		  <div class="modal-dialog modal-sm" role="document">
-			<div class="modal-content">
-				<div class="container" style="padding:10px">
-					<h3 style="color:green"><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:green"></span> Payment Successful</h3>
-				</div>
-			</div>
-		  </div>
+		
+		
+		<br>
+		<br>
+		
+		<div id="result">
 		</div>
-	
 		
 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
